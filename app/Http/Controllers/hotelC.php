@@ -12,9 +12,13 @@ class hotelC extends Controller
 {
     public function index()
     {
-        return view('indexV', ['hotels' => Hotel::all()]);  
+        return view('indexV');  
     }
     
+    public function lsthotels()
+    {
+        return view('lsthotelV', ['hotels' => Hotel::all()]);  
+    }
 
     public function clientSaisir()
     {
