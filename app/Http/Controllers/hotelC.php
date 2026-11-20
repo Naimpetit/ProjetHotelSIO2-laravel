@@ -20,23 +20,4 @@ class hotelC extends Controller
         return view('lsthotelV', ['hotels' => Hotel::all()]);  
     }
 
-    public function clientSaisir()
-    {
-        return view('creerclientV');
-    }
-
-    public function clientCreer(Request $request)
-    {
-        $data = new client();
-
-        $data->nom = $request->txtNom;
-        $data->mail = $request->txtMail;
-        $data->motpasse = Hash::make($request->input('txtMotpasse'));
-
-        $data->save();
-
-        session(['client' => $data]);
-        
-        return redirect()->route('client');
-    }
 }

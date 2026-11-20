@@ -12,9 +12,9 @@
         <form method="post" action="client">
             <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>" />
 
-            Nom : <input type="text" name="txtNom" value="" /><br><br>
-            Mail : <input type="email" name="txtMail" value="" required minlength="8" maxlength="30" /><br><br>
-            Mot de passe : <input type="password" name="txtMotpasse" value="" /><br><br>
+            Nom : <input type="text" name="txtNom" value="" required /><br><br>
+            Mail : <input type="email" name="txtMail" value="" required  /><br><br>
+            Mot de passe : <input type="password" name="txtMotpasse" value="" required minlength="8" maxlength="30" /><br><br>
             
             <input type="submit" value="Créer le compte" />
 
