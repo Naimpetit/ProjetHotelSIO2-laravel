@@ -3,7 +3,7 @@
 <li><a href=<?php echo url('/hotels'); ?>/>user1</a><br /></li> 
 <li><a href=<?php echo url('/us2'); ?>/>user2</a><br /></li>
 
-<?php if(session('client')) { ?>
+<?php if(session('client')) { ?> 
     <li><a href=<?php echo url('/deconnexion'); ?>/>déconnexion</a><br /></li>
 <?php } 
 else { ?>

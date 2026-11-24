@@ -9,14 +9,14 @@
 
         <h2>Création d'un compte client</h2>
 
-        <form method="post" action="client">
+        <form method="post" action="client">  <!-- formulaire de création de compte -->
             <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>" />
 
             Nom : <input type="text" name="txtNom" value="" required /><br><br>
             Mail : <input type="email" name="txtMail" value="" required  /><br><br>
             Mot de passe : <input type="password" name="txtMotpasse" value="" required minlength="8" maxlength="30" /><br><br>
             
-            <input type="submit" value="Créer le compte" />
+            <input type="submit" value="Créer le compte" /> <!-- bouton de création de compte -->
 
         </form>
 
