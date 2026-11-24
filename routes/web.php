@@ -8,6 +8,8 @@ Route::get('/', [hotelC::class, 'index'])->name('index'); // accueil
 
 Route::get('/hotels', [hotelC::class, 'lsthotels']); // user1
 
+Route::get('/rechercher', [hotelC::class, 'rechercher']); //user2
+
 Route::get('/client', [clientC::class, 'clientSaisir'])->name('client'); // user3
 Route::post('/client', [clientC::class, 'clientCreer']); // user3
 

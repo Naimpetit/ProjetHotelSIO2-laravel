@@ -20,4 +20,8 @@ class hotelC extends Controller
         return view('lsthotelV', ['hotels' => Hotel::all()]);  
     }
 
+    public function rechercher()
+    {
+        return view('rechercherV', ['hotels' => Hotel::all()]);  
+    }
 }
